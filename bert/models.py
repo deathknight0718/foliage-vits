@@ -8,12 +8,13 @@ from torch.nn import Conv1d, ConvTranspose1d, Conv2d
 from torch.nn.utils import weight_norm, remove_weight_norm, spectral_norm
 from torch.cuda.amp import autocast
 
-from modules import commons
-from modules import utils
-from modules import attentions
-from modules import symbols
-from modules.attentions import MultiHeadAttention
-from modules.quantizations import ResidualVectorQuantizer
+from . import commons
+from . import utils
+from . import attentions
+from .attentions import MultiHeadAttention
+from .quantizations import ResidualVectorQuantizer
+
+from languages import symbols
 
 from transformers import Wav2Vec2FeatureExtractor, HubertModel
 

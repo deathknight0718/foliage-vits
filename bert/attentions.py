@@ -5,8 +5,8 @@ from torch import nn
 from torch.nn import functional as F
 from torch.nn.utils import remove_weight_norm, weight_norm
 
-from modules import commons
-from modules.utils import LayerNorm
+from bert import commons
+from bert.utils import LayerNorm
 
 
 class Encoder(nn.Module):
