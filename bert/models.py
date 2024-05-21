@@ -14,7 +14,7 @@ from . import attentions
 from .attentions import MultiHeadAttention
 from .quantizations import ResidualVectorQuantizer
 
-from languages import symbols
+from language import symbols
 
 from transformers import Wav2Vec2FeatureExtractor, HubertModel
 

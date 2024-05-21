@@ -7,7 +7,7 @@ import soundfile
 from transformers import AutoModelForMaskedLM, AutoTokenizer, TensorType
 from bert.models import SynthesizerTraining, SyntheticHubertModel
 from vall_e.models.t2s_lightning_module import Text2SemanticLightningModule
-from languages.analyzers import analyze
+from language.analyzers import analyze
 from mel_spectrogram import spectrogram_torch
 from io import BytesIO
 
@@ -34,7 +34,7 @@ class Session:
 
     REFERENCE_WAV_PATH = "/home/foliage/project/foliage-vits/data/reference.wav"
 
-    OUTPUT_WAV_PATH = "/home/foliage/project/foliage-vits/out/output.wav"
+    OUTPUT_WAV_PATH = "/home/foliage/project/foliage-vits/.out/output.wav"
 
     DEVICE_MODE_CUDA = "cuda"
 

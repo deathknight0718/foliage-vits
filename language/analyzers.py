@@ -1,6 +1,6 @@
 from .symbols import cleaned_text_to_sequence
 
-from languages.zh import analyzer as zh_analyzer
+from language.zh import analyzer as zh_analyzer
 
 
 def analyze(text, language="zh"):
