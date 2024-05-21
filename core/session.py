@@ -34,7 +34,7 @@ class Session:
 
     REFERENCE_WAV_PATH = "/home/foliage/project/foliage-vits/data/reference.wav"
 
-    OUTPUT_WAV_PATH = "/home/foliage/project/foliage-vits/data/output.wav"
+    OUTPUT_WAV_PATH = "/home/foliage/project/foliage-vits/out/output.wav"
 
     DEVICE_MODE_CUDA = "cuda"
 
@@ -142,4 +142,4 @@ class Session:
 
 if __name__ == "__main__":
     session = Session()
-    session.speech("显卡加烟，法力无边")
+    session.speech("怒发冲冠，凭阑处、潇潇雨歇。抬望眼，仰天长啸，壮怀激烈。三十功名尘与土，八千里路云和月。莫等闲、白了少年头，空悲切。")
